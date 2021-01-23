@@ -106,21 +106,6 @@ body {
     stroke-opacity: 1;
 }
 
-/* NOTE: Ewentualna ramka wokół całej mapki. Wymaga lekkiego graficznego dopracowania. */
-/* #mapBorder {
-    display: inline;
-    fill: #a5ce3b;
-    fill-opacity: 1;
-    fill-rule: nonzero;
-    stroke: var(--light);
-    stroke-width: 2.396;
-    stroke-linecap: butt;
-    stroke-linejoin: miter;
-    stroke-miterlimit: 10;
-    stroke-dasharray: none;
-    stroke-opacity: 1;
-} */
-
 #lake {
     display: inline;
     fill: #12a89d;
