@@ -24,14 +24,16 @@ $(document).ready(function () {
     });
 });
 
-const cityPins = document.querySelectorAll('[data-name="city"]');
+window.addEventListener('DOMContentLoaded', () => {
+    const cityPins = document.querySelectorAll('[data-name="city"]');
 
-function showPin(pin) {
-    pin.children[`pin${pin.id}`].classList.toggle('hide');
-    pin.children[`pin${pin.id}`].classList.toggle('show');
-}
+    function showPin(pin) {
+        pin.children[`pin${pin.id}`].classList.toggle('hide');
+        pin.children[`pin${pin.id}`].classList.toggle('show');
+    }
 
-cityPins.forEach((pin) => {
-    pin.addEventListener('mouseenter', () => showPin(pin));
-    pin.addEventListener('mouseleave', () => showPin(pin));
+    cityPins.forEach((pin) => {
+        pin.addEventListener('mouseenter', () => showPin(pin));
+        pin.addEventListener('mouseleave', () => showPin(pin));
+    });
 });

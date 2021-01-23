@@ -42,6 +42,19 @@ body {
     fill: var(--success);
 }
 
+#palm * {
+    fill: var(--success);
+    fill-opacity: 1;
+    stroke: none;
+}
+
+#temple *,
+#elephant * {
+    fill: #9e6645;
+    fill-opacity: 1;
+    stroke: none;
+}
+
 #circle1729 {
     fill: var(--light);
 }
