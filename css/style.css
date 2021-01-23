@@ -42,6 +42,19 @@ body {
     fill: var(--success);
 }
 
+#palm * {
+    fill: var(--success);
+    fill-opacity: 1;
+    stroke: none;
+}
+
+#temple *,
+#elephant * {
+    fill: #9e6645;
+    fill-opacity: 1;
+    stroke: none;
+}
+
 #circle1729 {
     fill: var(--light);
 }
@@ -140,39 +153,30 @@ path[id^='KH']:hover {
     0% {
         transform: translate(1px, -40px);
     }
-
     12% {
         transform: translate(1px, -37.71px);
     }
-
     24% {
         transform: translate(1px, -30.85px);
     }
-
     36% {
         transform: translate(1px, -19.42px);
     }
-
     54% {
         transform: translate(1px, -24.25px);
     }
-
     74% {
         transform: translate(1px, -19.34px);
     }
-
     82% {
         transform: translate(1px, -20.31px);
     }
-
     92% {
         transform: translate(1px, -19.14px);
     }
-
     96% {
         transform: translate(1px, -19.32px);
     }
-
     100% {
         transform: translate(1px, -19px);
     }
