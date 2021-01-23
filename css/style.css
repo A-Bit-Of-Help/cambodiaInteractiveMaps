@@ -2,80 +2,182 @@ body {
     background-color: deepskyblue;
 }
 
-.mapdiv{
+.mapdiv {
     width: 100%;
     margin: auto;
 }
 
 .mapdiv path {
-    display:inline;
-    fill:#a5ce3b;
+    display: inline;
+    fill: #a5ce3b;
     fill-opacity: 0.1;
-    stroke:#000000;
-    stroke-width:1.5;
-    stroke-miterlimit:4;
-    stroke-dasharray:none;
-    stroke-opacity:1;
+    stroke: #000000;
+    stroke-width: 1.5;
+    stroke-miterlimit: 4;
+    stroke-dasharray: none;
+    stroke-opacity: 1;
     transition: fill 0.3s;
 }
 
 .mapdiv circle {
-    fill: red;
+    display: inline;
+    fill: transparent;
+    fill-opacity: 1;
+    stroke: var(--light);
+    stroke-width: 1.938941;
+    stroke-opacity: 1;
+    cursor: pointer;
+}
+
+.mapdiv text {
+    fill: var(--light);
+    cursor: pointer;
 }
 
 .mapdiv :hover {
     fill: black;
 }
 
+.mapdiv g:hover * {
+    fill: var(--success);
+}
+
+#palm * {
+    fill: var(--success);
+    fill-opacity: 1;
+    stroke: none;
+}
+
+#temple *,
+#elephant * {
+    fill: #9e6645;
+    fill-opacity: 1;
+    stroke: none;
+}
+
+#circle1729 {
+    fill: var(--light);
+}
+
+.mapdiv g:hover #circle1729 {
+    fill: var(--success);
+    stroke: var(--success);
+}
+
 #shadow2 {
-    display:inline;
-    fill:#ceebde;
-    fill-opacity:1;
-    fill-rule:nonzero;
-    stroke:#ceebde;
-    stroke-width:19.396;
-    stroke-linecap:butt;
-    stroke-linejoin:miter;
-    stroke-miterlimit:10;
-    stroke-dasharray:none;
-    stroke-opacity:1
+    display: inline;
+    fill: #ceebde;
+    fill-opacity: 1;
+    fill-rule: nonzero;
+    stroke: #ceebde;
+    stroke-width: 19.396;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 10;
+    stroke-dasharray: none;
+    stroke-opacity: 1;
 }
 
 #shadow1 {
-    display:inline;
-    fill:#68823a;
-    fill-opacity:1;
-    fill-rule:nonzero;
-    stroke:#68823a;
-    stroke-width:19.396;
-    stroke-linecap:butt;
-    stroke-linejoin:miter;
-    stroke-miterlimit:10;
-    stroke-dasharray:none;
-    stroke-opacity:1
+    display: inline;
+    fill: #68823a;
+    fill-opacity: 1;
+    fill-rule: nonzero;
+    stroke: #68823a;
+    stroke-width: 19.396;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 10;
+    stroke-dasharray: none;
+    stroke-opacity: 1;
 }
 
 #mapBackground {
-    display:inline;
-    fill:#a5ce3b;
-    fill-opacity:1;
-    fill-rule:nonzero;
-    stroke:#a5cd45;
-    stroke-width:19.396;
-    stroke-linecap:butt;
-    stroke-linejoin:miter;
-    stroke-miterlimit:10;
-    stroke-dasharray:none;
-    stroke-opacity:1
+    display: inline;
+    fill: #a5ce3b;
+    fill-opacity: 1;
+    fill-rule: nonzero;
+    stroke: #a5cd45;
+    stroke-width: 19.396;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 10;
+    stroke-dasharray: none;
+    stroke-opacity: 1;
 }
 
+/* NOTE: Ewentualna ramka wokół całej mapki. Wymaga lekkiego graficznego dopracowania. */
+/* #mapBorder {
+    display: inline;
+    fill: #a5ce3b;
+    fill-opacity: 1;
+    fill-rule: nonzero;
+    stroke: var(--light);
+    stroke-width: 2.396;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 10;
+    stroke-dasharray: none;
+    stroke-opacity: 1;
+} */
+
 #lake {
-    display:inline;
-    fill:#12a89d;
-    fill-opacity:1;
-    stroke:none;
-    stroke-width:1.0506px;
-    stroke-linecap:butt;
-    stroke-linejoin:miter;
-    stroke-opacity:1
+    display: inline;
+    fill: #12a89d;
+    fill-opacity: 1;
+    stroke: none;
+    stroke-width: 1.0506px;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-opacity: 1;
+}
+
+path[id^='KH'] {
+    stroke: none;
+}
+
+path[id^='KH']:hover {
+    stroke: var(--light);
+}
+
+.show {
+    opacity: 1;
+    animation: bounce 0.45s forwards;
+}
+
+.hide {
+    opacity: 0;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translate(1px, -40px);
+    }
+    12% {
+        transform: translate(1px, -37.71px);
+    }
+    24% {
+        transform: translate(1px, -30.85px);
+    }
+    36% {
+        transform: translate(1px, -19.42px);
+    }
+    54% {
+        transform: translate(1px, -24.25px);
+    }
+    74% {
+        transform: translate(1px, -19.34px);
+    }
+    82% {
+        transform: translate(1px, -20.31px);
+    }
+    92% {
+        transform: translate(1px, -19.14px);
+    }
+    96% {
+        transform: translate(1px, -19.32px);
+    }
+    100% {
+        transform: translate(1px, -19px);
+    }
 }
