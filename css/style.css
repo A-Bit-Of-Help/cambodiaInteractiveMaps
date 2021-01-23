@@ -129,9 +129,51 @@ path[id^='KH']:hover {
 
 .show {
     opacity: 1;
-    transform: translate(1px, -19px);
+    animation: bounce 0.45s forwards;
 }
 
 .hide {
     opacity: 0;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translate(1px, -40px);
+    }
+
+    12% {
+        transform: translate(1px, -37.71px);
+    }
+
+    24% {
+        transform: translate(1px, -30.85px);
+    }
+
+    36% {
+        transform: translate(1px, -19.42px);
+    }
+
+    54% {
+        transform: translate(1px, -24.25px);
+    }
+
+    74% {
+        transform: translate(1px, -19.34px);
+    }
+
+    82% {
+        transform: translate(1px, -20.31px);
+    }
+
+    92% {
+        transform: translate(1px, -19.14px);
+    }
+
+    96% {
+        transform: translate(1px, -19.32px);
+    }
+
+    100% {
+        transform: translate(1px, -19px);
+    }
 }
