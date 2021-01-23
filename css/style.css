@@ -20,11 +20,35 @@ body {
 }
 
 .mapdiv circle {
-    fill: red;
+    display: inline;
+    fill: transparent;
+    fill-opacity: 1;
+    stroke: var(--light);
+    stroke-width: 1.938941;
+    stroke-opacity: 1;
+    cursor: pointer;
+}
+
+.mapdiv text {
+    fill: var(--light);
+    cursor: pointer;
 }
 
 .mapdiv :hover {
     fill: black;
+}
+
+.mapdiv g:hover * {
+    fill: var(--success);
+}
+
+#circle1729 {
+    fill: var(--light);
+}
+
+.mapdiv g:hover #circle1729 {
+    fill: var(--success);
+    stroke: var(--success);
 }
 
 #shadow2 {
@@ -75,7 +99,7 @@ body {
     fill: #a5ce3b;
     fill-opacity: 1;
     fill-rule: nonzero;
-    stroke: white;
+    stroke: var(--light);
     stroke-width: 2.396;
     stroke-linecap: butt;
     stroke-linejoin: miter;
@@ -100,5 +124,5 @@ path[id^='KH'] {
 }
 
 path[id^='KH']:hover {
-    stroke: white;
+    stroke: var(--light);
 }
