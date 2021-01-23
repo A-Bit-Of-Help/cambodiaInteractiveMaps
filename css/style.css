@@ -126,3 +126,12 @@ path[id^='KH'] {
 path[id^='KH']:hover {
     stroke: var(--light);
 }
+
+.show {
+    opacity: 1;
+    transform: translate(1px, -19px);
+}
+
+.hide {
+    opacity: 0;
+}
