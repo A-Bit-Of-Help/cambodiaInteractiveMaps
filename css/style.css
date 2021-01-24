@@ -106,6 +106,16 @@ body {
     stroke-opacity: 1;
 }
 
+#nationalBorder {
+    display:inline;
+    fill:none;
+    stroke:#ffffff;
+    stroke-width:1.57083738;
+    stroke-miterlimit:4;
+    stroke-dasharray:none;
+    stroke-opacity:1;
+}
+
 #lake {
     display: inline;
     fill: #12a89d;
