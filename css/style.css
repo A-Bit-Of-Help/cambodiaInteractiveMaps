@@ -21,7 +21,7 @@ body {
 
 .mapdiv circle {
     display: inline;
-    fill: transparent;
+    fill: var(--light);
     fill-opacity: 1;
     stroke: var(--light);
     stroke-width: 1.938941;
@@ -53,15 +53,6 @@ body {
     fill: #9e6645;
     fill-opacity: 1;
     stroke: none;
-}
-
-#circle1729 {
-    fill: var(--light);
-}
-
-.mapdiv g:hover #circle1729 {
-    fill: var(--success);
-    stroke: var(--success);
 }
 
 #shadow2 {
@@ -107,13 +98,13 @@ body {
 }
 
 #nationalBorder {
-    display:inline;
-    fill:none;
-    stroke:#ffffff;
-    stroke-width:1.57083738;
-    stroke-miterlimit:4;
-    stroke-dasharray:none;
-    stroke-opacity:1;
+    display: inline;
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 1.57083738;
+    stroke-miterlimit: 4;
+    stroke-dasharray: none;
+    stroke-opacity: 1;
 }
 
 #lake {
@@ -128,12 +119,12 @@ body {
 }
 
 path[id^='KH'] {
-    stroke: none;
-}
-
-path[id^='KH']:hover {
     stroke: var(--light);
 }
+
+/* path[id^='KH']:hover {
+    stroke: var(--light);
+} */
 
 .show {
     opacity: 1;
@@ -142,6 +133,8 @@ path[id^='KH']:hover {
 
 .hide {
     opacity: 0;
+    opacity: 1;
+    /* animation: bounce 0.45s forwards; */
 }
 
 @keyframes bounce {
