@@ -15,6 +15,10 @@ $(document).ready(function () {
         $('#mKompongLeaeng').modal();
     });
 
+    $('#KH-4').click(function () {
+        $('#mKompongLeaeng').modal();
+    });
+
     $('#Kralanh').click(function () {
         $('#mKralanh').modal();
     });
@@ -22,18 +26,8 @@ $(document).ready(function () {
     $('#TaingKork').click(function () {
         $('#mTaingKork').modal();
     });
+
+    $('#KH-6').click(function () {
+        $('#mTaingKork').modal();
+    });
 });
-
-// window.addEventListener('DOMContentLoaded', () => {
-//     const cityPins = document.querySelectorAll('[data-name="city"]');
-
-//     function showPin(pin) {
-//         pin.children[`pin${pin.id}`].classList.toggle('hide');
-//         pin.children[`pin${pin.id}`].classList.toggle('show');
-//     }
-
-//     cityPins.forEach((pin) => {
-//         pin.addEventListener('mouseenter', () => showPin(pin));
-//         pin.addEventListener('mouseleave', () => showPin(pin));
-//     });
-// });
