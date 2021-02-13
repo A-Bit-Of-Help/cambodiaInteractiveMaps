@@ -178,7 +178,7 @@ path[id^='KH']:hover {
 #pinKompongLeaeng,
 #pinTaingKork {
     transform: translate(var(--positionX), var(--positionY));
-    animation: dropDown 2s var(--delay) forwards, bounce 8s calc(2s + var(--delay)) infinite;
+    animation: dropDown 5s var(--delay) forwards, bounce 8s calc(5s + var(--delay)) infinite;
 }
 
 @keyframes dropDown {
