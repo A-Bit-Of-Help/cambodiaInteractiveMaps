@@ -15,19 +15,11 @@ $(document).ready(function () {
         $('#mKompongLeaeng').modal();
     });
 
-    $('#KH-4').click(function () {
-        $('#mKompongLeaeng').modal();
-    });
-
     $('#Kralanh').click(function () {
         $('#mKralanh').modal();
     });
 
     $('#TaingKork').click(function () {
-        $('#mTaingKork').modal();
-    });
-
-    $('#KH-6').click(function () {
         $('#mTaingKork').modal();
     });
 
