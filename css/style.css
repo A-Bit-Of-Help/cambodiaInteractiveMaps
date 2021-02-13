@@ -129,7 +129,6 @@ body {
 
 path[id^='KH'] {
     stroke: none;
-    cursor: pointer;
 }
 
 path[id='KH-17'] {
@@ -138,16 +137,6 @@ path[id='KH-17'] {
 
 path[id^='KH']:hover {
     stroke: var(--light);
-}
-
-path[id='KH-17']:hover ~ g circle,
-path[id='KH-6']:hover ~ g text[data-text='TaingKork'],
-path[id='KH-4']:hover ~ g text[data-text='KompongLeaeng'],
-path[id='KH-17']:hover ~ g text[data-text='Varin'],
-path[id='KH-17']:hover ~ g text[data-text='SreiSnam'],
-path[id='KH-17']:hover ~ g text[data-text='SiemReap'],
-path[id='KH-17']:hover ~ g text[data-text='Kralanh'] {
-    fill: var(--success);
 }
 
 path[id='KH-17']:hover ~ path[data-name='province'] {
