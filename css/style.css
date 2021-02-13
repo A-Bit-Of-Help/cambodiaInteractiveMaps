@@ -122,24 +122,16 @@ body {
     stroke-opacity: 1;
 }
 
-.mapdiv [data-name='province'] {
+.mapdiv path[id^='province'] {
     stroke: none;
-    stroke-width: 0.25;
+    stroke-width: 0.5;
 }
 
 path[id^='KH'] {
     stroke: none;
 }
 
-path[id='KH-17'] {
-    cursor: default;
-}
-
 path[id^='KH']:hover {
-    stroke: var(--light);
-}
-
-path[id='KH-17']:hover ~ path[data-name='province'] {
     stroke: var(--light);
 }
 

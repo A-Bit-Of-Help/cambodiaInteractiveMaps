@@ -42,10 +42,40 @@ $(document).ready(function () {
     $('[data-hover="SiemReap"]')
         .mouseenter(function () {
             $('#KH-17').css({ stroke: '#f8f9fa', fill: '#000' });
-            $('[data-name="province"]').css('stroke', '#f8f9fa');
+            $('#province-SiemReap').css('stroke', '#f8f9fa');
         })
         .mouseleave(function () {
             $('#KH-17').css({ stroke: 'none', fill: '#a5ce3b' });
-            $('[data-name="province"]').css('stroke', 'none');
+            $('#province-SiemReap').css('stroke', 'none');
+        });
+
+    $('[data-hover="Kralanh"]')
+        .mouseenter(function () {
+            $('#KH-17').css({ stroke: '#f8f9fa', fill: '#000' });
+            $('#province-Kralanh').css('stroke', '#f8f9fa');
+        })
+        .mouseleave(function () {
+            $('#KH-17').css({ stroke: 'none', fill: '#a5ce3b' });
+            $('#province-Kralanh').css('stroke', 'none');
+        });
+
+    $('[data-hover="SreiSnam"]')
+        .mouseenter(function () {
+            $('#KH-17').css({ stroke: '#f8f9fa', fill: '#000' });
+            $('#province-SreiSnam').css('stroke', '#f8f9fa');
+        })
+        .mouseleave(function () {
+            $('#KH-17').css({ stroke: 'none', fill: '#a5ce3b' });
+            $('#province-SreiSnam').css('stroke', 'none');
+        });
+
+    $('[data-hover="Varin"]')
+        .mouseenter(function () {
+            $('#KH-17').css({ stroke: '#f8f9fa', fill: '#000' });
+            $('#province-Varin').css('stroke', '#f8f9fa');
+        })
+        .mouseleave(function () {
+            $('#KH-17').css({ stroke: 'none', fill: '#a5ce3b' });
+            $('#province-Varin').css('stroke', 'none');
         });
 });
