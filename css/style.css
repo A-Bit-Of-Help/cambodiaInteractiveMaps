@@ -122,35 +122,16 @@ body {
     stroke-opacity: 1;
 }
 
-.mapdiv [data-name='province'] {
+.mapdiv path[id^='province'] {
     stroke: none;
-    stroke-width: 0.25;
+    stroke-width: 0.5;
 }
 
 path[id^='KH'] {
     stroke: none;
-    cursor: pointer;
-}
-
-path[id='KH-17'] {
-    cursor: default;
 }
 
 path[id^='KH']:hover {
-    stroke: var(--light);
-}
-
-path[id='KH-17']:hover ~ g circle,
-path[id='KH-6']:hover ~ g text[data-text='TaingKork'],
-path[id='KH-4']:hover ~ g text[data-text='KompongLeaeng'],
-path[id='KH-17']:hover ~ g text[data-text='Varin'],
-path[id='KH-17']:hover ~ g text[data-text='SreiSnam'],
-path[id='KH-17']:hover ~ g text[data-text='SiemReap'],
-path[id='KH-17']:hover ~ g text[data-text='Kralanh'] {
-    fill: var(--success);
-}
-
-path[id='KH-17']:hover ~ path[data-name='province'] {
     stroke: var(--light);
 }
 
@@ -197,7 +178,7 @@ path[id='KH-17']:hover ~ path[data-name='province'] {
 #pinKompongLeaeng,
 #pinTaingKork {
     transform: translate(var(--positionX), var(--positionY));
-    animation: dropDown 2s var(--delay) forwards, bounce 8s calc(2s + var(--delay)) infinite;
+    animation: dropDown 5s var(--delay) forwards, bounce 8s calc(5s + var(--delay)) infinite;
 }
 
 @keyframes dropDown {
