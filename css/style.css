@@ -39,24 +39,25 @@ body {
 }
 
 .mapdiv .pin {
-    /* fill: #f96307; */
-    fill: red;
+    fill: var(--warning);
     fill-opacity: 1;
     stroke: #7e6a56;
     stroke-width: 1.04689;
     stroke-opacity: 1;
+    transform: scale(0.8);
 }
 
 .mapdiv .pinCircle {
     display: inline;
-    fill: #000000;
+    fill: var(--primary);
     fill-opacity: 1;
     stroke: #7a6a56;
     stroke-width: 0.938941;
     stroke-opacity: 1;
+    transform: scale(0.8);
 }
 
-.mapdiv :hover {
+.mapdiv :hover:not(.pin):not(.pinCircle) {
     fill: black;
 }
 
@@ -154,38 +155,38 @@ path[id^='KH']:hover {
 }
 
 #pinVarin {
-    --positionX: -33px;
-    --positionY: -34px;
+    --positionX: 63px;
+    --positionY: 8px;
     --delay: 0.1s;
 }
 
 #pinSreiSnam {
-    --positionX: 3px;
-    --positionY: -37px;
+    --positionX: 99px;
+    --positionY: 5px;
     --delay: 0.3s;
 }
 
 #pinKralanh {
-    --positionX: 0px;
-    --positionY: -31px;
+    --positionX: 96px;
+    --positionY: 11px;
     --delay: 0.5s;
 }
 
 #pinSiemReap {
-    --positionX: 1px;
-    --positionY: -40px;
+    --positionX: 97px;
+    --positionY: 2px;
     --delay: 0.7s;
 }
 
 #pinKompongLeaeng {
-    --positionX: -30px;
-    --positionY: -14px;
+    --positionX: 66px;
+    --positionY: 28px;
     --delay: 0.9s;
 }
 
 #pinTaingKork {
-    --positionX: -44px;
-    --positionY: 7px;
+    --positionX: 52px;
+    --positionY: 49px;
     --delay: 1.1s;
 }
 
