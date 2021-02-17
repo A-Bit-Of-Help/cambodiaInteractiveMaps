@@ -38,11 +38,29 @@ body {
     text-transform: uppercase;
 }
 
+.mapdiv .pin {
+    /* fill: #f96307; */
+    fill: red;
+    fill-opacity: 1;
+    stroke: #7e6a56;
+    stroke-width: 1.04689;
+    stroke-opacity: 1;
+}
+
+.mapdiv .pinCircle {
+    display: inline;
+    fill: #000000;
+    fill-opacity: 1;
+    stroke: #7a6a56;
+    stroke-width: 0.938941;
+    stroke-opacity: 1;
+}
+
 .mapdiv :hover {
     fill: black;
 }
 
-.mapdiv g:hover * {
+.mapdiv g:hover *:not(.pin):not(.pinCircle) {
     fill: var(--success);
 }
 
