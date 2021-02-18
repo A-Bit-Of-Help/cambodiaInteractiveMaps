@@ -342,5 +342,5 @@ path[id^='KH']:hover {
 }
 
 .kaput {
-    display: none !important;
+    opacity: 0 !important;
 }
