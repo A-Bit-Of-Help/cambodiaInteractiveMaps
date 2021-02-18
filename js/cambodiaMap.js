@@ -79,3 +79,16 @@ $(document).ready(function () {
             $('#province-Varin').css('stroke', 'none');
         });
 });
+
+// FOR TEST ONLY
+document.getElementById('area-switch').addEventListener('click', (e) => {
+    const areas = [...document.querySelectorAll('.area-test')];
+    areas.forEach((area) => area.classList.toggle('kaput'));
+    e.target.classList.toggle('off');
+});
+
+document.getElementById('pin-switch').addEventListener('click', (e) => {
+    const pinss = [...document.querySelectorAll('.pin-test')];
+    pinss.forEach((pin) => pin.classList.toggle('kaput'));
+    e.target.classList.toggle('off');
+});

@@ -251,7 +251,9 @@ path[id^='KH']:hover {
     }
 }
 
-/* COLOR TEST */
+/* -------------- */
+/*   COLOR TEST   */
+/* -------------- */
 #pinVarin .pin {
     fill: red;
 }
@@ -290,4 +292,55 @@ path[id^='KH']:hover {
 
 #pinTaingKork .pinCircle {
     fill: var(--cyan);
+}
+
+/* -------------- */
+/*      BTNS      */
+/* -------------- */
+.btns-container {
+    width: 850px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: var(--font-family-sans-serif);
+    font-size: 150%;
+}
+
+.btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    margin: 0 20px;
+}
+
+.switch {
+    border: solid 1px black;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: var(--success);
+    cursor: pointer;
+    content: 'zzzz';
+}
+
+.switch:hover {
+    transform: scale(1.1);
+}
+
+.switch:active {
+    transform: scale(0.9);
+}
+
+.switch:focus {
+    outline: none;
+}
+
+.off {
+    background-color: crimson;
+    color: white;
+}
+
+.kaput {
+    display: none !important;
 }
