@@ -155,13 +155,13 @@ path[id^='KH']:hover {
 }
 
 #pinVarin {
-    --positionX: 63px;
+    --positionX: 65px;
     --positionY: 8px;
     --delay: 0.1s;
 }
 
 #pinSreiSnam {
-    --positionX: 99px;
+    --positionX: 95px;
     --positionY: 5px;
     --delay: 0.3s;
 }
@@ -179,13 +179,13 @@ path[id^='KH']:hover {
 }
 
 #pinKompongLeaeng {
-    --positionX: 66px;
+    --positionX: 70px;
     --positionY: 28px;
     --delay: 0.9s;
 }
 
 #pinTaingKork {
-    --positionX: 52px;
+    --positionX: 54px;
     --positionY: 49px;
     --delay: 1.1s;
 }
@@ -249,4 +249,45 @@ path[id^='KH']:hover {
     52% {
         transform: translate(var(--positionX), calc(var(--positionY) + 16px));
     }
+}
+
+/* COLOR TEST */
+#pinVarin .pin {
+    fill: red;
+}
+
+#pinVarin .pinCircle {
+    fill: white;
+}
+
+#pinKralanh .pin {
+    fill: white;
+}
+
+#pinKralanh .pinCircle {
+    fill: red;
+}
+
+#pinSiemReap .pin {
+    fill: yellow;
+}
+
+#pinSiemReap .pinCircle {
+    fill: black;
+}
+
+#pinKompongLeaeng .pin {
+    fill: var(--indigo);
+}
+
+#pinKompongLeaeng .pinCircle {
+    fill: var(--yellow);
+}
+
+#pinTaingKork .pin {
+    fill: #fa4ffa;
+}
+
+#pinTaingKork .pinCircle {
+    fill: var(--cyan);
 }
