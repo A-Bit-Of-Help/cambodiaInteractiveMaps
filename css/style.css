@@ -24,7 +24,7 @@ body {
     fill: var(--light);
     fill-opacity: 1;
     stroke: var(--light);
-    stroke-width: 1.938941;
+    stroke-width: 1.9;
     stroke-opacity: 1;
     cursor: pointer;
 }
@@ -39,30 +39,26 @@ body {
 }
 
 .mapdiv .pin {
-    fill: var(--warning);
+    fill: #fa4ffa;
     fill-opacity: 1;
     stroke: #7e6a56;
-    stroke-width: 1.04689;
+    stroke-width: 1;
     stroke-opacity: 1;
     transform: scale(0.8);
 }
 
 .mapdiv .pinCircle {
     display: inline;
-    fill: var(--primary);
+    fill: white;
     fill-opacity: 1;
     stroke: #7a6a56;
-    stroke-width: 0.938941;
+    stroke-width: 0.9;
     stroke-opacity: 1;
     transform: scale(0.8);
 }
 
-.mapdiv :hover:not(.pin):not(.pinCircle) {
-    fill: black;
-}
-
 .mapdiv g:hover *:not(.pin):not(.pinCircle) {
-    fill: var(--success);
+    fill: var(--indigo);
 }
 
 #palm * {
@@ -78,13 +74,14 @@ body {
     stroke: none;
 }
 
-#shadow2 {
+#shadow1,
+#shadow2,
+#mapBackground,
+#lake {
     display: inline;
-    fill: #ceebde;
     fill-opacity: 1;
     fill-rule: nonzero;
-    stroke: #ceebde;
-    stroke-width: 19.396;
+    stroke-width: 19;
     stroke-linecap: butt;
     stroke-linejoin: miter;
     stroke-miterlimit: 10;
@@ -93,65 +90,33 @@ body {
 }
 
 #shadow1 {
-    display: inline;
     fill: #68823a;
-    fill-opacity: 1;
-    fill-rule: nonzero;
     stroke: #68823a;
-    stroke-width: 19.396;
-    stroke-linecap: butt;
-    stroke-linejoin: miter;
-    stroke-miterlimit: 10;
-    stroke-dasharray: none;
-    stroke-opacity: 1;
+}
+
+#shadow2 {
+    fill: #ceebde;
+    stroke: #ceebde;
 }
 
 #mapBackground {
-    display: inline;
     fill: #a5ce3b;
-    fill-opacity: 1;
-    fill-rule: nonzero;
     stroke: #a5cd45;
-    stroke-width: 19.396;
-    stroke-linecap: butt;
-    stroke-linejoin: miter;
-    stroke-miterlimit: 10;
-    stroke-dasharray: none;
-    stroke-opacity: 1;
+}
+
+#lake {
+    fill: #12a89d;
+    stroke: none;
 }
 
 #nationalBorder {
     display: inline;
     fill: none;
     stroke: #ffffff;
-    stroke-width: 1.57083738;
+    stroke-width: 1.6;
     stroke-miterlimit: 4;
     stroke-dasharray: none;
     stroke-opacity: 1;
-}
-
-#lake {
-    display: inline;
-    fill: #12a89d;
-    fill-opacity: 1;
-    stroke: none;
-    stroke-width: 1.0506px;
-    stroke-linecap: butt;
-    stroke-linejoin: miter;
-    stroke-opacity: 1;
-}
-
-.mapdiv path[id^='province'] {
-    stroke: none;
-    stroke-width: 0.5;
-}
-
-path[id^='KH'] {
-    stroke: none;
-}
-
-path[id^='KH']:hover {
-    stroke: var(--light);
 }
 
 #pinVarin {
@@ -178,15 +143,15 @@ path[id^='KH']:hover {
     --delay: 0.7s;
 }
 
-#pinKompongLeaeng {
-    --positionX: 70px;
-    --positionY: 28px;
+#pinTaingKork {
+    --positionX: 55px;
+    --positionY: 49px;
     --delay: 0.9s;
 }
 
-#pinTaingKork {
-    --positionX: 54px;
-    --positionY: 49px;
+#pinKompongLeaeng {
+    --positionX: 70px;
+    --positionY: 28px;
     --delay: 1.1s;
 }
 
@@ -205,28 +170,28 @@ path[id^='KH']:hover {
         transform: translate(var(--positionX), calc(var(--positionY) + 21px));
     }
     12% {
-        transform: translate(var(--positionX), calc(var(--positionY) + 2.29px));
+        transform: translate(var(--positionX), calc(var(--positionY) + 2px));
     }
     24% {
-        transform: translate(var(--positionX), calc(var(--positionY) + 9.15px));
+        transform: translate(var(--positionX), calc(var(--positionY) + 9px));
     }
     36% {
-        transform: translate(var(--positionX), calc(var(--positionY) + 20.58px));
+        transform: translate(var(--positionX), calc(var(--positionY) + 21px));
     }
     54% {
-        transform: translate(var(--positionX), calc(var(--positionY) + 15.75px));
+        transform: translate(var(--positionX), calc(var(--positionY) + 16px));
     }
     74% {
-        transform: translate(var(--positionX), calc(var(--positionY) + 20.66px));
+        transform: translate(var(--positionX), calc(var(--positionY) + 21px));
     }
     82% {
-        transform: translate(var(--positionX), calc(var(--positionY) + 19.69px));
+        transform: translate(var(--positionX), calc(var(--positionY) + 20px));
     }
     92% {
-        transform: translate(var(--positionX), calc(var(--positionY) + 20.86px));
+        transform: translate(var(--positionX), calc(var(--positionY) + 21px));
     }
     96% {
-        transform: translate(var(--positionX), calc(var(--positionY) + 20.68px));
+        transform: translate(var(--positionX), calc(var(--positionY) + 21px));
     }
     100% {
         transform: translate(var(--positionX), calc(var(--positionY) + 21px));
@@ -249,98 +214,4 @@ path[id^='KH']:hover {
     52% {
         transform: translate(var(--positionX), calc(var(--positionY) + 16px));
     }
-}
-
-/* -------------- */
-/*   COLOR TEST   */
-/* -------------- */
-#pinVarin .pin {
-    fill: red;
-}
-
-#pinVarin .pinCircle {
-    fill: white;
-}
-
-#pinKralanh .pin {
-    fill: white;
-}
-
-#pinKralanh .pinCircle {
-    fill: red;
-}
-
-#pinSiemReap .pin {
-    fill: yellow;
-}
-
-#pinSiemReap .pinCircle {
-    fill: black;
-}
-
-#pinKompongLeaeng .pin {
-    fill: var(--indigo);
-}
-
-#pinKompongLeaeng .pinCircle {
-    fill: var(--yellow);
-}
-
-#pinTaingKork .pin {
-    fill: #fa4ffa;
-}
-
-#pinTaingKork .pinCircle {
-    fill: var(--cyan);
-}
-
-/* -------------- */
-/*      BTNS      */
-/* -------------- */
-.btns-container {
-    width: 850px;
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: var(--font-family-sans-serif);
-    font-size: 150%;
-}
-
-.btn-wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 100px;
-    margin: 0 20px;
-}
-
-.switch {
-    border: solid 1px black;
-    text-transform: uppercase;
-    font-weight: bold;
-    background-color: var(--success);
-    cursor: pointer;
-    content: 'zzzz';
-}
-
-.switch:hover {
-    transform: scale(1.1);
-}
-
-.switch:active {
-    transform: scale(0.9);
-}
-
-.switch:focus {
-    outline: none;
-}
-
-.off {
-    background-color: crimson;
-    color: white;
-}
-
-.kaput {
-    opacity: 0 !important;
 }
