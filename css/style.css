@@ -24,7 +24,7 @@ body {
     fill: var(--light);
     fill-opacity: 1;
     stroke: var(--light);
-    stroke-width: 1.938941;
+    stroke-width: 1.9;
     stroke-opacity: 1;
     cursor: pointer;
 }
@@ -42,7 +42,7 @@ body {
     fill: #fa4ffa;
     fill-opacity: 1;
     stroke: #7e6a56;
-    stroke-width: 1.04689;
+    stroke-width: 1;
     stroke-opacity: 1;
     transform: scale(0.8);
 }
@@ -52,7 +52,7 @@ body {
     fill: white;
     fill-opacity: 1;
     stroke: #7a6a56;
-    stroke-width: 0.938941;
+    stroke-width: 0.9;
     stroke-opacity: 1;
     transform: scale(0.8);
 }
@@ -74,13 +74,14 @@ body {
     stroke: none;
 }
 
-#shadow2 {
+#shadow1,
+#shadow2,
+#mapBackground,
+#lake {
     display: inline;
-    fill: #ceebde;
     fill-opacity: 1;
     fill-rule: nonzero;
-    stroke: #ceebde;
-    stroke-width: 19.396;
+    stroke-width: 19;
     stroke-linecap: butt;
     stroke-linejoin: miter;
     stroke-miterlimit: 10;
@@ -89,51 +90,32 @@ body {
 }
 
 #shadow1 {
-    display: inline;
     fill: #68823a;
-    fill-opacity: 1;
-    fill-rule: nonzero;
     stroke: #68823a;
-    stroke-width: 19.396;
-    stroke-linecap: butt;
-    stroke-linejoin: miter;
-    stroke-miterlimit: 10;
-    stroke-dasharray: none;
-    stroke-opacity: 1;
+}
+
+#shadow2 {
+    fill: #ceebde;
+    stroke: #ceebde;
 }
 
 #mapBackground {
-    display: inline;
     fill: #a5ce3b;
-    fill-opacity: 1;
-    fill-rule: nonzero;
     stroke: #a5cd45;
-    stroke-width: 19.396;
-    stroke-linecap: butt;
-    stroke-linejoin: miter;
-    stroke-miterlimit: 10;
-    stroke-dasharray: none;
-    stroke-opacity: 1;
+}
+
+#lake {
+    fill: #12a89d;
+    stroke: none;
 }
 
 #nationalBorder {
     display: inline;
     fill: none;
     stroke: #ffffff;
-    stroke-width: 1.57083738;
+    stroke-width: 1.6;
     stroke-miterlimit: 4;
     stroke-dasharray: none;
-    stroke-opacity: 1;
-}
-
-#lake {
-    display: inline;
-    fill: #12a89d;
-    fill-opacity: 1;
-    stroke: none;
-    stroke-width: 1.0506px;
-    stroke-linecap: butt;
-    stroke-linejoin: miter;
     stroke-opacity: 1;
 }
 
@@ -162,7 +144,7 @@ body {
 }
 
 #pinTaingKork {
-    --positionX: 54px;
+    --positionX: 55px;
     --positionY: 49px;
     --delay: 0.9s;
 }
@@ -188,28 +170,28 @@ body {
         transform: translate(var(--positionX), calc(var(--positionY) + 21px));
     }
     12% {
-        transform: translate(var(--positionX), calc(var(--positionY) + 2.29px));
+        transform: translate(var(--positionX), calc(var(--positionY) + 2px));
     }
     24% {
-        transform: translate(var(--positionX), calc(var(--positionY) + 9.15px));
+        transform: translate(var(--positionX), calc(var(--positionY) + 9px));
     }
     36% {
-        transform: translate(var(--positionX), calc(var(--positionY) + 20.58px));
+        transform: translate(var(--positionX), calc(var(--positionY) + 21px));
     }
     54% {
-        transform: translate(var(--positionX), calc(var(--positionY) + 15.75px));
+        transform: translate(var(--positionX), calc(var(--positionY) + 16px));
     }
     74% {
-        transform: translate(var(--positionX), calc(var(--positionY) + 20.66px));
+        transform: translate(var(--positionX), calc(var(--positionY) + 21px));
     }
     82% {
-        transform: translate(var(--positionX), calc(var(--positionY) + 19.69px));
+        transform: translate(var(--positionX), calc(var(--positionY) + 20px));
     }
     92% {
-        transform: translate(var(--positionX), calc(var(--positionY) + 20.86px));
+        transform: translate(var(--positionX), calc(var(--positionY) + 21px));
     }
     96% {
-        transform: translate(var(--positionX), calc(var(--positionY) + 20.68px));
+        transform: translate(var(--positionX), calc(var(--positionY) + 21px));
     }
     100% {
         transform: translate(var(--positionX), calc(var(--positionY) + 21px));
